@@ -1,94 +1,104 @@
-# Online Application for Psychological Counselling
+# 🧠 Online Application for Psychological Counselling - Frontend
 
-## Overview
-This project is an online platform for psychological counselling, allowing users to book appointments with counsellors, communicate securely, and manage their mental health support.
+## 🚀 Tech Stack (Fast Development)
 
-## Features
-- **User Authentication**: Secure signup and login using JWT.
-- **User Profiles**: Clients and counsellors can manage their profiles.
-- **Appointment Booking**: Clients can schedule sessions with available counsellors.
-- **Messaging System**: Secure chat functionality between clients and counsellors.
-- **Admin Dashboard**: Manage users, appointments, and track activity.
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-## Tech Stack
-### Frontend:
-- React.js (with Tailwind CSS for styling)
-- React Router for navigation
+### Frontend Technologies
+- **React.js**: Component-based UI library
+- **Tailwind CSS**: Utility-first styling
+- **React Router**: Seamless navigation
 
-### Backend:
-- Node.js with Express.js
-- JWT Authentication
+## 🎯 Limited Features (4 Only)
 
-### Database:
-- MongoDB (via Mongoose) or PostgreSQL (via Sequelize)
+### 1. 🔐 User Authentication
+- Signup and login functionality
+- JWT-based secure authentication
+- Role-based access control
 
-### Deployment:
-- Frontend: Vercel or Netlify
-- Backend: Heroku or DigitalOcean
-- Database: MongoDB Atlas or Railway (for PostgreSQL)
+### 2. 👤 Profile Management
+- Separate profiles for clients and counselors
+- Comprehensive profile editing
+- Profile picture upload
 
-## Installation & Setup
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/psych-counselling-app.git
-   cd psych-counselling-app
-   ```
-2. **Install dependencies:**
-   ```bash
-   # Frontend
-   cd frontend
-   npm install
-   ```
-   ```bash
-   # Backend
-   cd backend
-   npm install
-   ```
-3. **Set up environment variables:**
-   - Create a `.env` file in the backend folder and add:
-     ```env
-     PORT=5000
-     MONGO_URI=your-mongodb-uri
-     JWT_SECRET=your-secret-key
-     ```
-4. **Run the development servers:**
-   ```bash
-   # Backend
-   cd backend
-   npm start
-   ```
-   ```bash
-   # Frontend
-   cd frontend
-   npm start
-   ```
+### 3. 📅 Appointment Booking
+- Interactive session scheduling system
+- Real-time counselor availability
+- Booking confirmation mechanism
 
-## API Routes
-| Method | Endpoint | Description |
-|--------|---------|-------------|
-| POST   | /api/auth/register | Register a new user |
-| POST   | /api/auth/login | Login user and get token |
-| GET    | /api/users/:id | Get user profile |
-| POST   | /api/appointments/book | Book an appointment |
-| GET    | /api/appointments | Get all appointments |
-| POST   | /api/messages/send | Send a message |
+### 4. 💬 Text Chat
+- Real-time messaging interface
+- Secure communication channel
+- Message history tracking
 
-## Folder Structure
-```
-psych-counselling-app/
-│── frontend/       # React frontend
-│── backend/        # Express.js backend
-│── README.md       # Project documentation
-│── .gitignore      # Ignore unnecessary files
+## 🚀 Quick Start Guide
+
+### Prerequisites
+- Node.js (v14+)
+- npm or yarn
+
+### Installation Steps
+
+1. Clone the Repository
+```bash
+git clone https://github.com/your-username/psych-counselling-app.git
+cd psych-counselling-app/frontend
 ```
 
-## Future Enhancements
-- Video/audio call integration
-- AI-based mental health assessment
-- Multi-language support
+2. Install Dependencies
+```bash
+npm install
+```
 
-## Contributing
-Pull requests are welcome! Please create an issue before making significant changes.
+3. Configure Environment
+Create a `.env` file:
+```env
+REACT_APP_BACKEND_URL=http://localhost:5000/api
+REACT_APP_JWT_SECRET=your_jwt_secret
+```
 
-## License
-This project is licensed under the MIT License.
+4. Launch Development Server
+```bash
+npm start
+```
+
+## 📂 Project Structure
+
+```
+frontend/
+│── src/
+│   ├── components/    # Reusable React components
+│   ├── pages/         # Page-specific components
+│   ├── context/       # State management
+│   ├── services/      # API interaction
+│   └── utils/         # Utility functions
+│── public/            # Static assets
+└── package.json       # Project dependencies
+```
+
+## 🌐 Deployment
+
+- **Platform**: Vercel
+- **Automatic Deployments**: Configured for main branch
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit changes
+4. Push to branch
+5. Open a Pull Request
+
+## 📄 License
+
+MIT License - Free to use, modify, and distribute
+
+---
+
+🚀 Developed with a focus on mental health support
